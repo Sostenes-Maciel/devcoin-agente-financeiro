@@ -52,30 +52,31 @@ Como Executar o Projeto Localmente
 
 Se você deseja rodar o DevCoin na sua máquina para testar as capacidades de análise do agente, siga os passos abaixo:
 
-    Clone o repositório
+
+Clone o repositório
+    
+    git clone [https://github.com/SEU-USUARIO/devcoin-agente-financeiro.git](https://github.com/SEU-USUARIO/devcoin-agente-financeiro.git)cd devcoin-agente-financeiro/src
 
 
 
-git clone [https://github.com/SEU-USUARIO/devcoin-agente-financeiro.git](https://github.com/SEU-USUARIO/devcoin-agente-financeiro.git)
-cd devcoin-agente-financeiro/src
-
-    Configure a Chave da API
+ Configure a Chave da API
     Crie um arquivo chamado .env na pasta src/ (usando o .env.example como base) e adicione a sua chave do Google AI Studio:
+    
+    Plaintext
 
-Plaintext
+    GEMINI_API_KEY=sua_chave_api_do_google_aqui
 
-GEMINI_API_KEY=sua_chave_api_do_google_aqui
 
-    Instale as dependências
+Instale as dependências
     É recomendado o uso de um ambiente virtual (venv).
+    
+    pip install -r requirements.txt
 
 
+Rode a aplicação
 
-pip install -r requirements.txt
-
-    Rode a aplicação
+    streamlit run app.py
 
 
-streamlit run app.py
 
 O terminal interativo será aberto automaticamente no seu navegador padrão, pronto para refatorar suas contas!
